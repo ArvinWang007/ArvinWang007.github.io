@@ -1,0 +1,5 @@
+/* style sheet for index.html */
+h1 {
+	font-size: 28px;
+	border: solid 2px #000;
+}
