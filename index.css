@@ -1,5 +1,241 @@
 /* style sheet for index.html */
-h1 {
-	font-size: 28px;
-	border: solid 2px #000;
+/* style sheet for example cafe */
+@font-face {
+  font-family: 'DroidSerifRegular';
+  src: url('../fonts/DroidSerif-Regular-webfont.eot');
+  src: url('../fonts/DroidSerif-Regular-webfont.eot?#iefix') 
+       format('embedded-opentype'),
+     url('../fonts/DroidSerif-Regular-webfont.woff') format('woff'),
+     url('../fonts/DroidSerif-Regular-webfont.ttf') format('truetype'),
+     url('../fonts/DroidSerif-Regular-webfont.svg#DroidSerifRegular') 
+     format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+@font-face {
+  font-family: 'DroidSerifItalic';
+  src: url('../fonts/DroidSerif-Italic-webfont.eot');
+  src: url('../fonts/DroidSerif-Italic-webfont.eot?#iefix') 
+       format('embedded-opentype'),
+    url('../fonts/DroidSerif-Italic-webfont.woff') format('woff'),
+    url('../fonts/DroidSerif-Italic-webfont.ttf') format('truetype'),
+    url('../fonts/DroidSerif-Italic-webfont.svg#DroidSerifItalic') 
+    format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DroidSerifBold';
+  src: url('../fonts/DroidSerif-Bold-webfont.eot');
+  src: url('../fonts/DroidSerif-Bold-webfont.eot?#iefix') 
+       format('embedded-opentype'),
+    url('../fonts/DroidSerif-Bold-webfont.woff') format('woff'),
+    url('../fonts/DroidSerif-Bold-webfont.ttf') format('truetype'),
+    url('../fonts/DroidSerif-Bold-webfont.svg#DroidSerifBold') 
+    format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DroidSerifBoldItalic';
+  src: url('../fonts/DroidSerif-BoldItalic-webfont.eot');
+  src: url('../fonts/DroidSerif-BoldItalic-webfont.eot?#iefix') 
+       format('embedded-opentype'),
+    url('../fonts/DroidSerif-BoldItalic-webfont.woff') format('woff'),
+    url('../fonts/DroidSerif-BoldItalic-webfont.ttf') format('truetype'),
+    url('../fonts/DroidSerif-BoldItalic-webfont.svg#DroidSerifBoldItalic') format('svg');
+   DroidSerifRegular, font-weight: normal;
+  font-style: normal;
+}
+
+body {font-family: Helvetica,"Microsoft YaHei", arial, verdana, sans-serif;
+}
+
+.my-description {
+	position: absolute;
+	left: 15%;
+  	width:960px;
+  	border:10px solid #3399cc;
+  	padding:40px;
+  	margin:20px;
+  	text-align: left;
+}
+
+h1, h2, h3, h4 {
+  	font-family : georgia, times, serif;
+  	color:#66666;
+}
+h1 {
+  font-family : DroidSerifBold, georgia, times, serif;
+}
+.top-nav {
+	width: 100%;
+	height: 10%;
+	background-color: ;
+
+}
+.top-nav li{
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 28px;
+	font-weight: bold;
+	font-family : georgia, times, serif;
+  	color:#66666;
+}
+.top-nav li:nth-child(1){
+	margin-left: 15%;
+}
+.font-logo {
+	border-top:1px solid #d6d6d6;
+  	border-bottom:1px solid #d6d6d6;
+  	padding:5px 0px 5px 0px;
+  	margin:0px 0px 20px 0px;
+  	color:#3399cc;
+  	text-decoration:none;
+  	margin-right:20px;
+}
+.next-page {
+	position: absolute;
+	top: 40%;
+	right: 20px;
+	margin: 0;
+	height: 180px;
+	width:  100px;
+	background-image: url(img/next_page.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.info-des {
+	width: 90%;
+	height: 300px;
+	border: solid 1px #3399cc;
+}
+.info-sch {
+	padding: 20px 0px;
+	width: 90%;
+	height: 250px;
+	border: solid 1px #3399cc;
+}
+.my-picture {
+	width: 200px;
+	height: 250px;
+	float: left; 
+	margin-right: 3em;
+
+}
+.info {
+	display: inline-block;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+}
+
+#info1 {
+	margin-top: 2.5em;
+	display: inline-block;
+}
+#info2 {
+	position: relative;
+	top: -50px;
+}
+.xiaohui {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-right: 30px;
+}
+#info3 {
+	position: relative;
+	top: -48px;
+	margin-top: 0px;
+	display: inline-block;
+	margin-right: 20px;
+}
+#info4 {
+	display: inline-block;
+	width: 350px;
+	height: 220px;
+}
+
+.skill-color {
+	display: inline-block;
+	height: 30px;
+	width: 400px;
+	background-color: #D5EFFE;
+	margin: 5px 0px;
+	padding: 5px 10px 0px 10px;
+	font-size: 18px;
+}
+
+#python-color {
+	margin-top: 0px;
+	width: 700px;
+	color: #3597cc;
+}
+#html-color {
+	background-color: #EAF6D0;
+	color: #a2bc65;
+	width: 550px;
+}
+#javascript-color {
+	background-color: #EAF6D0;
+	color: #a2bc65;
+	width: 450px;
+}
+#PS-color {
+	background-color: #FEF7DD;
+	color: #f4a442;
+	width: 300px;
+}
+.web-pic {
+	float: left;
+}
+
+.skill-des {
+	margin-top: 20px;
+	border: solid 1px #000;
+	padding: 5px;
+}
+.skill h3 {
+	font-size: 23px;
+	color: #2361b2;
+}
+
+.my-blog {
+	width: 90%;
+	height: 300px;
+	margin-right: 20px;
+}
+.my-blog h2{
+	text-align: left;
+	margin-left: 20px;
+}
+.my-mobile-reader {
+	width: 90%;
+	height: 300px;
+}
+.my-mobile-reader h2 {
+	text-align: left;
+	margin-left: 20px;
+}
+.project-img {
+	width: 300px;
+	height: 220px;
+}
+.blog-pic {
+	float: left;
+	margin-right: 20px;
+}
+.er-img {
+	position: absolute;
+	bottom: 30px;
+	right: 100px;
+	width: 150px;
+	height: 150px;
+}
+p {
+	text-indent: 2em;
+  	color:#333333;
+  	font-size:90%;
+  	line-height:1.3em;
+}
+
